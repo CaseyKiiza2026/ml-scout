@@ -1,0 +1,22 @@
+[project]
+name = "ml-scout"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Casey Kiiza", email = "caseykizza@trentu.ca" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "langchain-google-genai>=4.4.0",
+    "langgraph>=1.2.12",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+ml-scout = "ml_scout:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
